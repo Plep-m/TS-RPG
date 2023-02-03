@@ -1,5 +1,8 @@
+import PlayersParser from './libs/Parsers';
+
 function main() {
-  console.log('Hello World!');
+  const players = PlayersParser('jsons/players.json');
+  console.log(players);
   return 0;
 }
 

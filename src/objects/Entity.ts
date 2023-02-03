@@ -24,7 +24,7 @@ export default class Entity {
 
   public defense: number;
 
-  public magic_resistence: number;
+  public magic_resistance: number;
 
   public speed: number;
 
@@ -32,7 +32,7 @@ export default class Entity {
 
   public is_magical: boolean;
 
-  constructor(name: string, level: number, hp: number, attack: number, magic_power: number, defense: number, magic_resistence: number, speed: number, is_alive: boolean, is_magical: boolean) {
+  constructor(name: string, level: number, hp: number, attack: number, magic_power: number, defense: number, magic_resistance: number, speed: number, is_alive: boolean, is_magical: boolean) {
     this.name = name;
     this.level = level;
     this.hp = hp;
@@ -40,7 +40,7 @@ export default class Entity {
     this.attack = attack;
     this.magic_power = magic_power;
     this.defense = defense;
-    this.magic_resistence = magic_resistence;
+    this.magic_resistance = magic_resistance;
     this.speed = speed;
     this.is_alive = is_alive;
     this.is_magical = is_magical;

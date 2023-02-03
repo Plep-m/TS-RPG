@@ -7,7 +7,7 @@
       "attack": 10,
       "magic_power": 10,
       "defense": 10,
-      "magic_defense": 10,
+      "magic_resistance": 10,
       "speed": 10,
       "inventory": [],
       "gold": 0,
