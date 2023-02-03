@@ -1,0 +1,19 @@
+{
+  "players": [
+    {
+      "name": "John Doe",
+      "level": 1,
+      "hp": 100,
+      "attack": 10,
+      "magic_power": 10,
+      "defense": 10,
+      "magic_defense": 10,
+      "speed": 10,
+      "inventory": [],
+      "gold": 0,
+      "spells": [],
+      "is_alive": true,
+      "is_magical": true
+    }
+  ]
+}
