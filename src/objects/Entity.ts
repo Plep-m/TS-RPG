@@ -20,18 +20,41 @@ export default class Entity {
 
   public attack: number;
 
+  public magic_power: number;
+
   public defense: number;
+
+  public magic_resistence: number;
 
   public speed: number;
 
-  // eslint-disable-next-line max-len
-  constructor(name: string, level: number, hp: number, attack: number, defense: number, speed: number) {
+  public is_alive: boolean;
+
+  public is_magical: boolean;
+
+  constructor(name: string, level: number, hp: number, attack: number, magic_power: number, defense: number, magic_resistence: number, speed: number, is_alive: boolean, is_magical: boolean) {
     this.name = name;
     this.level = level;
     this.hp = hp;
     this.maxHp = hp;
     this.attack = attack;
+    this.magic_power = magic_power;
     this.defense = defense;
+    this.magic_resistence = magic_resistence;
     this.speed = speed;
+    this.is_alive = is_alive;
+    this.is_magical = is_magical;
+  }
+
+  take_damage(damage: number): void {
+    /**
+     * this function is called when the entity take damage
+     * it decrease the hp of the entity by the damage taken minus entity's defense
+     * @param damage the damage taken by the entity
+     */
+    this.hp -= (damage - this.defense);
+    if (this.hp <= 0) {
+      this.is_alive = false;
+    }
   }
 }

@@ -7,9 +7,10 @@ export default class Monster extends Entity {
      * @param replics the replics of the monster
      */
 
-  // eslint-disable-next-line max-len
-  constructor(name: string, level: number, hp: number, attack: number, defense: number, speed: number, public replics: string[]) {
-    super(name, level, hp, attack, defense, speed);
+  public replics: string[];
+
+  constructor(name: string, level: number, hp: number, attack: number, magic_power: number, defense: number, magic_resistence: number, speed: number, replics: string[], is_alive: boolean, is_magical: boolean) {
+    super(name, level, hp, attack, magic_power, defense, magic_resistence, speed, is_alive, is_magical);
     this.replics = replics;
   }
 }
